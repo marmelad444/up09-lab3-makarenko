@@ -32,4 +32,7 @@ urlpatterns = [
     # Когда пользователь открывает `/about/`, вызывается функция `about`, которая,
     # в данном случае, возвращает HTML-шаблон "about.html".
     path('', views.index),
+        
+    path('posts/', include('posts.urls')),
+    path('posts/', include('communities.urls')),
 ]
