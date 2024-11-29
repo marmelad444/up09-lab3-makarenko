@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     min-height: 100vh;
     display: flex;
@@ -28,9 +28,35 @@ main {
 
 a {
     text-decoration: none;
-    color: #81dbb8;
+    color: #a567df;
 }
 
 a:hover {
     opacity: .85;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+li {
+    margin: 0 15px; 
+}
+
+.navbar {
+    width: 100%; 
+    background-color: #211b24; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+.navbar ul {
+    justify-content: center; 
 }

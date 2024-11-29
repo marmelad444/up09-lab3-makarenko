@@ -9,10 +9,15 @@
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
 <body>
-    <li><a href="/about"></a></li>
-    <li><a href="/index"></a></li>
-    <li><a href="/posts"></a></li>
-    <li><a href="/communities"></a></li>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">Обо мне</a></li>
+            <li><a href="/posts">Посты</a></li>
+            <li><a href="/communities">Группы</a></li>
+            <div class="animation start-home"></div>
+        </ul>
+    </nav>
     <main>{% block content %} {% endblock %}</main>
 </body>
 </html>
