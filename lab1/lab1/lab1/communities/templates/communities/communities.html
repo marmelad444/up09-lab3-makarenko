@@ -1,9 +1,17 @@
-{% extends 'layout.html' %}
-
-{% block title %}
-    Communities
-{% endblock %}
-
+{% extends 'layout.html' %} {% block title %} Communities {% endblock %}
 {% block content %}
-    <h1>Группы</h1>
+<section>
+    <h1>Communities</h1>
+    
+    {% for communities in communities %}
+    <article class="community">
+        <h2>
+            <a href="{%  url 'communities:page' slug=communities.slug %}"> {{ communities.name }} </a>
+        </h2>
+        <p>{{ communities.description }}</p>
+        <p>{{ communities.date }}</p>
+        <p>{{ communities.free|yesno:"Да,Нет" }}</p>
+    </article>
+    {% endfor %}
+</section>
 {% endblock %}
