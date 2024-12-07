@@ -8,9 +8,6 @@
         <h2>
             <a href="{%  url 'communities:page' slug=communities.slug %}"> {{ communities.name }} </a>
         </h2>
-        <p>{{ communities.description }}</p>
-        <p>{{ communities.date }}</p>
-        <p>{{ communities.free|yesno:"Да,Нет" }}</p>
     </article>
     {% endfor %}
 </section>
