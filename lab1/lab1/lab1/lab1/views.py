@@ -15,3 +15,4 @@ def about(req):
     # в виде словаря (например, `{"key": "value"}`).
 def index(req):
     return render(req, "index.html")
+
